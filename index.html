@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Генератор паролей от Артёмыча</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <p id="header">Введите желаемую длину пароля ниже (от 8 до 20):</p>
+      <div id="placeForLengthPassword">
+        <input
+          type="text"
+          title="Напишите число от 8 до 20"
+          id="length_password"
+          placeholder="Введите число"
+        />
+        <button id="takePasswordBtn">Получить пароль</button>
+      </div>
+
+      <div id="placeForPassword">
+        <input
+          type="text"
+          name=""
+          id="showPassword"
+          maxlength="50"
+          title="Здесь будет ваш пароль"
+        />
+        <button id="copyButton">Скопировать пароль</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

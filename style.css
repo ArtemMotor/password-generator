@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+body {
+  align-items: center; /*это свойство используется для выравнивания по второстепенной оси*/
+  background: linear-gradient(320deg, #faf0cd, #fab397);
+  display: flex; /*элементы выстроились вдоль главной оси x*/
+  /*Ось можно поменять если прописать flex-direction: column*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center; /*это свойство используется для выравнивания по главной оси*/
+}
+
+#wrapper {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  border-radius: 16px;
+  flex-basis: 400px; /*задали размер обертки по основной оси*/
+  height: 400px;
+  width: 400px;
+  padding: 20px 35px;
+}
+
+#header {
+  margin-top: 100px;
+}
+
+#takePasswordBtn {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-family: inherit;
+  font-size: 12px;
+  height: 30px;
+  padding: 3px;
+  width: 150px;
+}
+
+#takePasswordBtn:hover {
+  background-color: #f9edb4;
+  transition: 0.7s;
+}
+
+#copyButton {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  font-family: inherit;
+  font-size: 12px;
+  height: 30px;
+  padding: 3px;
+  width: 150px;
+}
+
+#copyButton:hover {
+  background-color: #f9edb4;
+  transition: 0.7s;
+}
+
+#placeForLengthPassword {
+  margin-top: 20px;
+}
+
+#placeForPassword {
+  margin-top: 20px;
+  display: none;
+}
+
+#length_password {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 3px;
+  height: 31px;
+}
+
+#showPassword {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 3px;
+  height: 30px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
